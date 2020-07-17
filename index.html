@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<title>sudoku by abdallah</title>
+	<link rel="icon" href="icon.jpg">
+	<link href="stylesheet.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div id="posSols"></div>
+		<div style="display:flex;">
+			<div class="buttonsLeft">
+				<button class="upload" title="LOAD A GAME" onclick="upload()"></button>
+				<input id="inputfile" type="file" style="display: none;" />
+				<button class="save" title="SAVE GAME" onclick="download()"></button>
+				<a href="#" download="puzzle.txt" id="puzzleContent" style="visibility: hidden"></a>
+				<button class="restart" title="RESTART GAME" onclick="checkRestart()"></button>
+			</div>
+			<div class="board" id="board">
+			</div>
+			<div class="buttonsRight">
+				<button class="undo" title="UNDO" onclick="undo()"></button>
+				<button class="redo" title="REDO" onclick="redo()"></button>
+				<button class="hint" title="GET A HINT" onclick="hint()"></button>
+				<button class="autofill" title="FILL ALL CELLS THAT HAS ONLY ONE LEGAL VALUE" onclick="autoFill()"></button>
+			</div>
+		</div>
+		<h3>&copy; Abdallah Barghouti - Tel Aviv University Project</h3>
+		<div class="numbers">
+			<div id="num-1" onclick="cellSetNum('1')">1</div>
+			<div id="num-2" onclick="cellSetNum('2')">2</div>
+			<div id="num-3" onclick="cellSetNum('3')">3</div>
+			<div id="num-4" onclick="cellSetNum('4')">4</div>
+			<div id="num-5" onclick="cellSetNum('5')">5</div>
+			<div id="num-6" onclick="cellSetNum('6')">6</div>
+			<div id="num-7" onclick="cellSetNum('7')">7</div>
+			<div id="num-8" onclick="cellSetNum('8')">8</div>
+			<div id="num-9" onclick="cellSetNum('9')">9</div>
+			<button id="empty" onclick="cellSetNum('0')">clear</button>
+		</div>
+	</div>
+	<div id="intro">
+		<div class="shadow"></div>
+		<div class="messageBox">
+			<h2>Enter number of cells to fill the starting puzzle (0-80)<br>or load a game<br>
+				<div id="error"></div>
+			</h2>
+			<input type="text" id="userInput">
+			<div class="buttons">
+				<button class="load" onclick="upload()">Load</button>
+				<button onclick="startGame('e')">Enter</button>
+				<button onclick="startGame('r')">Random</button>
+			</div>
+		</div>
+	</div>
+	<div id="restart" style="visibility: hidden;">
+		<div class="shadow"></div>
+		<div class="messageBox">
+			<h2>Are you sure you want restart without saving progress?</h2>
+			<div class="buttons">
+				<button class="yesSave" onclick="download()">Save</button>
+				<button onclick="restart()">Restart</button>
+				<button onclick="cancel()">Cancel</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
