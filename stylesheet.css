@@ -1,0 +1,208 @@
+body, button {
+	font-family: 'MuseoModerno', cursive;
+	font-size: 25px;
+	text-align: center;
+}
+
+.container,
+.messageBox {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.messageBox {
+	background-color: white;
+	box-shadow: 0px 2px 8px;
+	padding: 10px;
+	width: 350px;
+}
+
+.messageBox button, 
+h2 {
+	font-size: 18px;
+	font-family: monospace;
+	margin-bottom: 10px;
+}
+
+h3{
+	font-size: 14px;
+	font-family: monospace;
+	margin-top: 0px;
+}
+
+#posSols h3{
+	margin-bottom: 5px;
+}
+
+#error{
+	font-size: 12px;
+	color: red;
+}
+
+.messageBox .buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.messageBox button{
+	padding: 7px 10px 7px 10px;
+	margin: 10px;
+}
+
+.yesSave, .load{
+	background-color: #008CBA;
+}
+
+.yesSave:hover, .load:hover{
+	background-color: #0f7ca3;
+}
+
+.shadow {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 50%;
+}
+
+button {
+	border: none;
+	border-radius: 2px;
+}
+
+.buttonsLeft button,
+.buttonsRight button, .upload {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 20px;
+	background-color: lightgray;
+	background-size: 60%;
+	background-position: 53%;
+}
+
+[id*="num-"]:hover,
+button:hover {
+	background-color: darkgray;
+	background-size: 75%;
+}
+
+.hint {
+	background: url(hint.png) no-repeat;
+}
+
+.redo {
+	background: url(redo.png) no-repeat;
+}
+
+.undo {
+	background: url(undo.png) no-repeat;
+}
+
+.autofill {
+	background: url(autofill.png) no-repeat;
+}
+
+.restart {
+	background: url(restart.png) no-repeat;
+}
+
+.save,
+.upload {
+	background-size: 75% !important;
+}
+
+.save:hover,
+.upload:hover {
+	background-size: 90% !important;
+}
+
+.save {
+	background: url(save.png) no-repeat;
+}
+
+.upload {
+	background: url(upload.png) no-repeat;
+}
+
+
+.buttonsLeft {
+	padding-right: 15px;
+}
+
+.buttonsRight {
+	padding-left: 15px;
+}
+
+.board {
+	border: 3px solid black;
+}
+
+[class*="shora-"],
+.numbers {
+	display: flex;
+}
+
+[id*="cell-"] {
+	border: 1px solid black;
+	width: 45px;
+	height: 45px;
+}
+
+[id*="cell-"]:hover {
+	background-color: aliceblue !important;
+}
+
+
+[class*="shora-"] [id$="2"],
+[class*="shora-"] [id$="5"] {
+	border-right: 4px solid grey;
+}
+
+[class*="shora-"] [id$="3"],
+[class*="shora-"] [id$="6"] {
+	border-left: none;
+}
+
+[id*="cell-2"],
+[id*="cell-5"] {
+	border-bottom: 4px solid grey;
+}
+
+[id*="cell-3"],
+[id*="cell-6"] {
+	border-top: none;
+}
+
+[id*="num-"] {
+	border: 0px;
+	border-radius: 50%;
+	margin-right: 5px;
+	width: 43px;
+	height: 43px;
+	background-color: lightgrey;
+}
+
+[id*="num-"]:last-child {
+	margin-right: 0px;
+}
+
+.numbers {
+	margin-left: 15px;
+}
+
+#empty {
+	width: 70px;
+	height: 43px;
+	margin-left: 30px;
+	font-size: 22px;
+	background-color: #0f7ca3;
+}
+
+#empty:hover {
+	font-size: 25px;
+}
