@@ -391,7 +391,6 @@ function upload() {
 }
 
 document.getElementById('inputfile').addEventListener('change', function () {
-
 	var fr = new FileReader();
 	fr.onload = function () {
 		checkFile(fr.result);

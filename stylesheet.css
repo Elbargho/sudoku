@@ -92,23 +92,23 @@ button:hover {
 }
 
 .hint {
-	background: url(hint.png) no-repeat;
+	background: url(photos/hint.png) no-repeat;
 }
 
 .redo {
-	background: url(redo.png) no-repeat;
+	background: url(photos/redo.png) no-repeat;
 }
 
 .undo {
-	background: url(undo.png) no-repeat;
+	background: url(photos/undo.png) no-repeat;
 }
 
 .autofill {
-	background: url(autofill.png) no-repeat;
+	background: url(photos/autofill.png) no-repeat;
 }
 
 .restart {
-	background: url(restart.png) no-repeat;
+	background: url(photos/restart.png) no-repeat;
 }
 
 .save,
@@ -122,11 +122,11 @@ button:hover {
 }
 
 .save {
-	background: url(save.png) no-repeat;
+	background: url(photos/save.png) no-repeat;
 }
 
 .upload {
-	background: url(upload.png) no-repeat;
+	background: url(photos/upload.png) no-repeat;
 }
 
 
