@@ -211,18 +211,3 @@ button:hover {
 #empty:hover {
 	font-size: 25px;
 }
-
-@media only screen and (max-width: 768px) {
-
-	.container,
-	.messageBox {
-		position: fixed;
-		top: 100%;
-		left: 100%;
-		transform: translate(-50%, -50%);
-	}
-
-	.numbers {
-		margin-left: 150px;
-	}
-}
