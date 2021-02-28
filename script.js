@@ -69,7 +69,7 @@ function startGame(choice) {
 		toFillCells = rand(10, 31);
 	else
 		toFillCells = document.getElementById("userInput").value;
-	if (isNaN(toFillCells) || toFillCells < 0 || toFillCells > 80) {
+	if (isNaN(toFillCells) || toFillCells < 0 || toFillCells > 80 || toFillCells == "") {
 		document.getElementById("error").innerHTML = "*Enter a number in the range 0-80";
 		document.getElementById("userInput").value = null;
 	} else {
